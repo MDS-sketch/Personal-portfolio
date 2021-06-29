@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 body
 {
     background-color: black;
+    font-family: 'Poppins', Times, serif;
+   
+}
+/*Bootstrap 5 Navbar custome css*/
+.navbar
+{
+    background-color:gray !important;
+    border-bottom: 1px solid white;
+        
+}
+.navbar-nav > li{
+    margin-right: 30px;
+    margin-left: 30px;
+    
+}
+
+.nav-link
+{
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link:hover
+{
+    color: red !important;
+    text-shadow: none;
+}
+
+
+/*Welcome-section CSS*/
+h1,
+p
+{
+    color: white;
 }
