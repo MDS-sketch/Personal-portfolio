@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('http://fonts.cdnfonts.com/css/chunky-boulder-outlines');
+@import url('http://fonts.cdnfonts.com/css/yonezawa');
+
+*
+{
+    scroll-behavior: smooth;
+}
 
 body
 {
@@ -6,10 +13,15 @@ body
     font-family: 'Poppins', Times, serif;
    
 }
+::-webkit-scrollbar
+{
+    display: none;
+}
+
 /*Bootstrap 5 Navbar custome css*/
 .navbar
 {
-    background-color:gray !important;
+    background-color:black!important;
     border-bottom: 1px solid white;
         
 }
@@ -27,13 +39,55 @@ body
 
 .nav-link:hover
 {
-    color: red !important;
+    color: rgb(174, 245, 8)!important;
     text-shadow: none;
 }
 
-/*Welcome-section CSS*/
-h1,
-p
+.logo-name
 {
-    color: white;
+    font-family: 'yonezawa', sans-serif;
+    -webkit-text-fill-color: rgb(174, 245, 8);
+    font-size: 28px;     
+                                         
+}
+
+
+/*Welcome-section CSS*/
+
+.container1
+{
+    width: 100%;
+    height: fit-content;
+    margin-top: 70px;
+    
+}
+#welcome-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+   
+}
+#welcome-section > h1
+{
+    font-size: 44px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(170, 240, 20), rgb(140, 248, 32));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#welcome-section > p
+{
+    font-family: 'Poppins', Times, serif;
+    background: -webkit-linear-gradient(rgb(170, 240, 20), rgb(140, 248, 32));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
 }
