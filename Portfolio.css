@@ -117,6 +117,7 @@ body
 {
     color: white ;    
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     align-self: flex-start;
     margin-left: 50px;
