@@ -113,6 +113,14 @@ body
     margin-left: 50px;
 
 }
+#welcome-section .qualification
+{
+    color: white ;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    align-self: flex-start;
+    margin-left: 50px;
+}
 
 /*About-me section*/
 
@@ -145,8 +153,6 @@ body
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    
-    
 }
 
 .about_me::after
@@ -161,7 +167,12 @@ body
     
 }
 
-
+.description
+{
+    color: rgb(139, 137, 137);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 /*.About 
 {
   
