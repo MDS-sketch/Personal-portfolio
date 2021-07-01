@@ -81,6 +81,7 @@ body
     font-weight: bold;
     background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: white; /*Fallback for old browsers*/
     align-self: flex-start;
@@ -106,6 +107,7 @@ body
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     font-family: 'Roboto', sans-serif;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 75px;
     font-weight: bold;
@@ -152,6 +154,7 @@ body
     font-weight: bold;
     background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
@@ -162,6 +165,7 @@ body
     content:"About Me";
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
@@ -186,43 +190,45 @@ body
 
 @media (max-width:768px) 
 {
-    #welcome-section > h1
-{
-    font-size: 24px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: white; /*Fallback for old browsers*/
-    align-self: flex-start;
-    margin-left: 10px;
-    
-}
+        #welcome-section > h1
+    {
+        font-size: 24px;
+        font-weight: bold;
+        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: white; /*Fallback for old browsers*/
+        align-self: flex-start;
+        margin-left: 10px;
+        
+    }
 
-#welcome-section > p
-{
-    font-family: 'Poppins', Times, serif;
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: rgb(168, 168, 168); 
-    align-self: flex-start;
-    margin-left: 10px;
-    
-}
+    #welcome-section > p
+    {
+        font-family: 'Poppins', Times, serif;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: rgb(168, 168, 168); 
+        align-self: flex-start;
+        margin-left: 10px;
+        
+    }
 
-#welcome-section .name
-{
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-    font-family: 'Roboto', sans-serif;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 55px;
-    font-weight: bold;
-    align-self: flex-start;
-    margin-left: 10px;
-    
+    #welcome-section .name
+    {
+        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+        font-family: 'Roboto', sans-serif;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 55px;
+        font-weight: bold;
+        align-self: flex-start;
+        margin-left: 10px;
+        
 
-}
+    }
 
 }
