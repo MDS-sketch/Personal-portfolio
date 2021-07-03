@@ -146,6 +146,23 @@ body
        
 }
 
+.sidebyside
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebyside > img
+{
+    border-radius: 50%;
+    margin-left: 150px;
+    align-self: center;
+   
+}
+
 .about_me
 {
     
@@ -177,6 +194,21 @@ body
     color: rgb(139, 137, 137);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    width: 50%;
+    align-self: flex-start;
+    text-align: justify;
+    margin-left: 100px;
+    display: flex;
+    
+}
+
+
+
+
+#welcome-section > .opportunities
+{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
 }
 /*.About 
 {
