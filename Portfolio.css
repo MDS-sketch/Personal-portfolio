@@ -124,6 +124,71 @@ body
     align-self: flex-start;
     margin-left: 50px;
 }
+.contact-button
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.contact-button > a
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(174, 255, 0);
+    box-shadow: none;
+    border: none;
+    align-self: center;
+    width: 150px ;
+    height: 38px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    -webkit-border-radius: 0px; 
+    border-radius: 5px; 
+    border: 1px solid rgb(174, 255, 0) ;
+    overflow: hidden;
+
+  
+}
+.contact-button > a:hover
+
+{
+    background-color: transparent;
+    border:1px solid rgb(174, 255, 0) ;
+    color: rgb(174, 255, 0) ;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.contact-button > a:focus:active:checked
+
+{
+    background-color: none;
+}
+
+.contact-button .fa
+{
+    margin: 5px;
+}
+.contact-button .fa-github
+{
+   
+    color: white;
+}
+.contact-button .fa-linkedin-square
+{
+    color:#0072b1;
+}
+
+.contact-button .fa-codepen
+{
+    background-color:white;
+    width: 18px;
+    color:#000000;
+}
 
 /*About-me section*/
 
@@ -132,6 +197,8 @@ body
     width: 100%;
     margin-top: 70px;
     height: 100vh;
+    overflow: hidden;
+    
 
 }
 
@@ -165,7 +232,6 @@ body
    
 }
 
-
 .about_me
 {
     
@@ -194,26 +260,16 @@ body
 
 .description
 {
-    color: rgb(139, 137, 137);
+    color: rgb(199, 195, 195);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    width: 50% !important;
+    width: 60% !important;
     align-self: flex-start;
     text-align: justify;
-    margin-left: 100px;
-    display: flex;
-    border: 1px solid red;
-    
+    margin-left: 25px;
+    margin-top: 10px;
+    line-height: 1.5em;
 }
-span
-{
-
-  color: red;
-    
-}
-
-
-
 
 
 #welcome-section > .opportunities
@@ -221,6 +277,8 @@ span
     color: rgb(255, 255, 255);
     font-size: 15px;
 }
+
+
 /*.About 
 {
   
