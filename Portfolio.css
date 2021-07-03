@@ -124,6 +124,13 @@ body
     align-self: flex-start;
     margin-left: 50px;
 }
+
+#welcome-section > .opportunities
+{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
 .contact-button
 {
     display: flex;
@@ -190,6 +197,13 @@ body
     color:#000000;
 }
 
+.contact-button .fa-free-code-camp
+{
+    background-color: #0d1233;
+    width: 25px;
+    color: white;
+}
+
 /*About-me section*/
 
 .container2
@@ -211,25 +225,6 @@ body
     width: 100%;
     height: 100vh;
        
-}
-
-.sidebyside
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-   
-}
-
-.sidebyside > img
-{
-    border-radius: 50%;
-    margin-left: 150px;
-    align-self: center;
-    width: 15%;
-   
 }
 
 .about_me
@@ -258,6 +253,27 @@ body
     
 }
 
+.sidebyside
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.sidebyside > img
+{
+    border-radius: 50%;
+    margin-left: 150px;
+    align-self: center;
+    width: 15%;
+   
+}
+
+
+
 .description
 {
     color: rgb(199, 195, 195);
@@ -271,14 +287,6 @@ body
     line-height: 1.5em;
 }
 
-
-#welcome-section > .opportunities
-{
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-}
-
-
 /*.About 
 {
   
@@ -287,7 +295,127 @@ body
     
 }*/
 
+/*Projects Grid section*/
+.container3
+{
+    display: flex;
+    width: 100%;
+    margin-top: 70px;
 
+    
+    
+}
+#projects
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.Projects-title
+{
+    font-family: 'Roboto', sans-serif;    
+    font-size: 30px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.Projects-title::after
+{
+    content:"Projects";
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projects-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 50px;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+  
+  
+.project
+{
+    background: rgb(46, 46, 46);
+    box-shadow: 10px 10px 20px rgba(65, 64, 64, 0.5),-10px -10px 20px rgba(65, 64, 64, 0.5);
+    border-radius: 2px;
+    text-decoration: none;
+}
+  
+.code 
+{
+    color: rgb(140, 255, 24);
+    transition: color 0.3s ease-out;
+}
+  
+.project:hover .code 
+{
+    color:white;
+}
+  
+.project-image 
+{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+  
+.project-title 
+{
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px 10px;
+    
+  
+}
+.project-title:hover 
+{
+    color: yellowgreen;
+    transition: color 0.3s ease-out;
+
+}
+
+
+
+/*Tech Stack*/
+
+.container4
+{
+    width: 100%;
+    margin-top: 100px;
+    height: 100vh;
+    overflow: hidden;
+    border: 1px solid red;
+    
+}
+
+/*Contact*/
+.container5
+{
+    width: 100%;
+    margin-top: 100px;
+    height: 100vh;
+    overflow: hidden;
+    border: 1px solid red;
+}
 
 @media (max-width:768px) 
 {
