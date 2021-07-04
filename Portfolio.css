@@ -210,8 +210,8 @@ body
 {
     width: 100%;
     margin-top: 70px;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
+   
     
 
 }
@@ -223,7 +223,7 @@ body
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
        
 }
 
@@ -255,11 +255,13 @@ body
 
 .sidebyside
 {
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    height: auto;
    
 }
 
