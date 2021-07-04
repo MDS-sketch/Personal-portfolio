@@ -342,9 +342,9 @@ body
 .projects-grid 
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 50px;
-    width: 100%;
+    width: 90%;
     max-width: 1240px;
     margin: 20px auto;
     margin-bottom: 100px;
@@ -372,7 +372,7 @@ body
   
 .project-image 
 {
-    height: 80%;
+    height: 75%;
     width: 100%;
     object-fit: cover;
 }
@@ -460,5 +460,77 @@ body
         
 
     }
+    .about_me
+{
+    
+    font-family: 'Roboto', sans-serif;    
+    font-size: 25px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.about_me::after
+{
+    
+    content:"About Me";
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+    
+.sidebyside
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+   
+}
+
+.sidebyside > img
+{
+    border-radius: 50%;
+    margin-left: 50px;
+    align-self: center;
+    width: 20%;
+   
+}
+
+
+
+.description
+{
+    color: rgb(199, 195, 195);
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    width: 60% !important;
+    align-self: flex-start;
+    text-align: justify;
+    margin-left: 25px;
+    margin-top: 10px;
+    line-height: 1.5em;
+}
+.projects-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-gap: 50px;
+    width: 80%;
+    max-width: 1240px;
+    margin: 20px auto;
+    margin-bottom: 100px;
+}
+  
 
 }
