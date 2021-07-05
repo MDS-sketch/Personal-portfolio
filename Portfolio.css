@@ -70,7 +70,7 @@ header
     height: fit-content;
     margin-top: 70px;
     height: 100vh;
-    border: 1px solid red;
+   
      
 }
 
@@ -194,10 +194,7 @@ header
    
     color: white;
 }
-.contact-button .fa-linkedin-square
-{
-    color:#0072b1;
-}
+
 
 .contact-button .fa-codepen
 {
@@ -219,11 +216,7 @@ header
 {
     width: 100%;
     margin-top: 70px;
-    height: auto;
-    border: 1px solid red;
-
-    
-
+    height: auto; 
 }
 
 #About-me
@@ -313,7 +306,6 @@ header
     display: flex;
     width: 100%;
     margin-top: 70px;
-    border: 1px solid red;
     height: auto;
 
     
@@ -414,9 +406,9 @@ header
 {
     width: 100%;
     max-width: 1440px;
-    margin-top: 100px;
+    margin-top: 20px;
     height: auto;
-    border: 1px solid red;
+    
     
 }
 
@@ -515,16 +507,93 @@ header
 }
 
 
-/*Contact*/
+/*Contact section*/
 .container5
 {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 0;
     height: 100vh;
     overflow: hidden;
     border: 1px solid red;
 }
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    
+}
+
+.Work-call
+{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.coffee
+{
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.contact
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.contact > a
+{
+    background-color: rgb(0, 0, 0);
+    box-shadow: none;
+    border: none;
+    align-self: center;
+    font-size: 25px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    -webkit-border-radius: 5px; 
+    border-radius: 5px; 
+    overflow: hidden;
+  
+    transition: transform .8s ease-in-out;
+
+
+  
+}
+.contact > a:hover
+
+{
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    
+
+}
+.contact > a:focus:active:checked
+
+{
+    background-color: none;
+}
 
 
 
@@ -634,9 +703,9 @@ header
     .projects-grid 
     {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
-        grid-gap: 50px;
-        width: 80%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-gap: 40px;
+        width: 90%;
         max-width: 1240px;
         margin: 20px auto;
         margin-bottom: 100px;
@@ -799,7 +868,7 @@ header
         padding: 30px 10px;
     }
 
-
+}
 @media (max-width:325px)
 {
     #welcome-section > h1
@@ -929,11 +998,13 @@ header
         font-size: 15px;
     
     }
-.Projects-title::after
+
+    .Projects-title::after
     {
         font-size: 20px;
        
     }
+
      .projects-grid 
     {
         display: grid;
