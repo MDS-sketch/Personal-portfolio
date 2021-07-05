@@ -12,6 +12,8 @@ body
 {
     background-color: black;
     font-family: 'Poppins', Times, serif;
+    width: 100%;
+    height: auto;
    
 }
 ::-webkit-scrollbar
@@ -20,6 +22,11 @@ body
 }
 
 /*Bootstrap 5 Navbar custome css*/
+header
+{
+    position: fixed;
+    top: 0;
+}
 .navbar
 {
     background-color:black!important;
@@ -270,8 +277,8 @@ body
     border-radius: 50%;
     margin-left: 150px;
     align-self: center;
-    width: 15%;
-   
+    width: 18%;
+  
 }
 
 
@@ -408,6 +415,37 @@ body
     
 }
 
+#Tech-stack
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tech
+{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tech::after
+{
+    content: "Stack";
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    font-family: 'Roboto', sans-serif;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /*Contact*/
 .container5
 {
@@ -417,6 +455,11 @@ body
     overflow: hidden;
     border: 1px solid red;
 }
+
+
+
+
+
 
 @media (max-width:768px) 
 {
@@ -461,76 +504,76 @@ body
 
     }
     .about_me
-{
-    
-    font-family: 'Roboto', sans-serif;    
-    font-size: 25px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-}
+    {
+        
+        font-family: 'Roboto', sans-serif;    
+        font-size: 25px;
+        font-weight: bold;
+        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
 
-.about_me::after
-{
+    .about_me::after
+    {
+        
+        content:"About Me";
+        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
     
-    content:"About Me";
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 35px;
-    font-family: 'Roboto', sans-serif;
+    .sidebyside
+    {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
     
-}
+    }
+
+    .sidebyside > img
+    {
+        border-radius: 50%;
+        margin-left: 50px;
+        align-self: center;
+        width: 20%;
     
-.sidebyside
-{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: auto;
-   
-}
-
-.sidebyside > img
-{
-    border-radius: 50%;
-    margin-left: 50px;
-    align-self: center;
-    width: 20%;
-   
-}
+    }
 
 
 
-.description
-{
-    color: rgb(199, 195, 195);
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    width: 60% !important;
-    align-self: flex-start;
-    text-align: justify;
-    margin-left: 25px;
-    margin-top: 10px;
-    line-height: 1.5em;
-}
-.projects-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
-    grid-gap: 50px;
-    width: 80%;
-    max-width: 1240px;
-    margin: 20px auto;
-    margin-bottom: 100px;
-}
+    .description
+    {
+        color: rgb(199, 195, 195);
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        width: 60% !important;
+        align-self: flex-start;
+        text-align: justify;
+        margin-left: 25px;
+        margin-top: 10px;
+        line-height: 1.5em;
+    }
+    .projects-grid 
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+        grid-gap: 50px;
+        width: 80%;
+        max-width: 1240px;
+        margin: 20px auto;
+        margin-bottom: 100px;
+    }
   
 
 }
