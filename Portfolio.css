@@ -71,7 +71,6 @@ header
     margin-top: 70px;
     height: 100vh;
    
-     
 }
 
 #welcome-section
@@ -305,7 +304,7 @@ header
 {
     display: flex;
     width: 100%;
-    margin-top: 70px;
+    margin-top:115px;
     height: auto;
 
     
@@ -452,7 +451,6 @@ header
     margin-bottom: 100px;
     background-color: rgb(2, 2, 2);
     border-radius: 10px;
- 
     height: auto;
 }
 
@@ -511,10 +509,10 @@ header
 .container5
 {
     width: 100%;
-    margin-top: 0;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
-    border: 1px solid red;
+    margin: 200px 0 350px 0;
+    
 }
 #contact
 {
@@ -556,7 +554,7 @@ header
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
     
 }
 
@@ -574,10 +572,7 @@ header
     -webkit-border-radius: 5px; 
     border-radius: 5px; 
     overflow: hidden;
-  
-    transition: transform .8s ease-in-out;
-
-
+    transition: transform .3s ease-in-out;
   
 }
 .contact > a:hover
@@ -586,29 +581,57 @@ header
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
-    
+    transform: translateY(5px);
 
 }
-.contact > a:focus:active:checked
+.contact > .btn-primary:focus
 
 {
     background-color: none;
 }
 
+#footer
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+#footer >p 
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: left !important;
+
+}
+
+#footer .copyright
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    justify-content: flex-start;
+    text-decoration: none;
+}
 
 
 @media (max-width:768px) 
 {
+    #welcome-section
+{
+
+    height: auto;
+    margin: 150px 0 50px 0;
+
+}
+
         #welcome-section > h1
     {
         font-size: 24px;
-        font-weight: bold;
-        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white; /*Fallback for old browsers*/
-        align-self: flex-start;
         margin-left: 10px;
         
     }
@@ -617,65 +640,36 @@ header
     {
         font-family: 'Poppins', Times, serif;
         font-size: 18px;
-        text-transform: capitalize;
-        font-weight: bold;
-        color: rgb(168, 168, 168); 
-        align-self: flex-start;
         margin-left: 10px;
         
     }
 
     #welcome-section .name
     {
-        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-        font-family: 'Roboto', sans-serif;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-size: 55px;
-        font-weight: bold;
-        align-self: flex-start;
         margin-left: 10px;
         
 
     }
+
     .about_me
     {
         
         font-family: 'Roboto', sans-serif;    
         font-size: 25px;
         font-weight: bold;
-        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         
     }
 
     .about_me::after
     {
         
-        content:"About Me";
-        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-size: 35px;
         font-family: 'Roboto', sans-serif;
         
     }
     
-    .sidebyside
-    {
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    
-    }
+
 
     .sidebyside > img
     {
@@ -690,16 +684,12 @@ header
 
     .description
     {
-        color: rgb(199, 195, 195);
-        font-family: 'Roboto', sans-serif;
+
         font-size: 10px;
         width: 60% !important;
-        align-self: flex-start;
-        text-align: justify;
-        margin-left: 25px;
-        margin-top: 10px;
-        line-height: 1.5em;
+    
     }
+
     .projects-grid 
     {
         display: grid;
@@ -711,21 +701,88 @@ header
         margin-bottom: 100px;
     }
   
+    .tech
+    {
+        font-size: 30px;
+    }
+
+
+    .Stack-Title
+    {
+
+        font-size: 20px;
+        padding: 10px 0;
+
+        
+    }
+    .container5
+    {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 100px 0 200px 0;
+        
+    }
+
+    #contact
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+
+    .Work-call
+    {
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
+
+    .coffee
+    {
+       
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .contact
+    {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+
+    .contact > a
+    {
+        font-size: 15px;
+   
+    }
+    #footer
+    {
+        font-size: 12px;
+    }
 
 }
 
 @media (max-width:425px)
 {
+    #welcome-section
+    {
+    
+        height: auto;
+        margin:100px 0 100px 0;
+    
+    }
     #welcome-section > h1
     {
         font-size: 25px;
-        font-weight: bold;
-        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white; /*Fallback for old browsers*/
-        align-self: flex-start;
         margin-left: 10px;
         
     }
@@ -734,41 +791,35 @@ header
     {
         font-family: 'Poppins', Times, serif;
         font-size: 12px;
-        text-transform: capitalize;
-        font-weight: bold;
-        color: rgb(168, 168, 168); 
-        align-self: flex-start;
         margin-left: 10px;
         
     }
 
     #welcome-section .name
     {
-        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-        font-family: 'Roboto', sans-serif;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+
         font-size: 40px;
-        font-weight: bold;
-        align-self: flex-start;
         margin-left: 10px;
     }
 
     #welcome-section > .opportunities
     {
         color: rgb(255, 255, 255);
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .contact-button > a
     {
-        background-color: rgb(0, 0, 0);
-        color: rgb(174, 255, 0);
+
         width: 120px ;
         height: 38px;
         overflow: hidden;
 
+    
+    }
+    #About-me
+    {
+        margin-top: 0;
     
     }
 
@@ -778,21 +829,14 @@ header
         font-family: 'Roboto', sans-serif;    
         font-size: 20px;
         font-weight: bold;
-        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+   
         
     }
 
     .about_me::after
     {
         
-        content:"About Me";
-        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+  
         font-size: 30px;
         font-family: 'Roboto', sans-serif;
         
@@ -834,7 +878,7 @@ header
         word-wrap: break-word;
         line-height: 1.5em;
         margin-left: 0;
-        border: 1px solid red;
+
     }
 
     .Projects-title
@@ -843,7 +887,8 @@ header
         font-size: 20px;
     
     }
-.Projects-title::after
+
+    .Projects-title::after
     {
         font-size: 25px;
        
@@ -852,10 +897,10 @@ header
     {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        grid-gap: 50px;
+        grid-gap: 40px;
         width: 80%;
         max-width: 1240px;
-        margin: 20px auto;
+        margin: 10px auto;
         margin-bottom: 100px;
     }
     .project-title 
@@ -868,6 +913,63 @@ header
         padding: 30px 10px;
     }
 
+    
+    .tech
+    {
+        font-size: 30px;
+    }
+
+
+    .Stack-Title
+    {
+
+        font-size: 20px;
+        padding: 10px 0;
+
+        
+    }
+
+    #contact
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+
+    .Work-call
+    {
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+    }
+
+    .coffee
+    {
+       
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .contact
+    {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+
+    .contact > a
+    {
+        font-size: 15px;
+   
+    }
+
 }
 @media (max-width:325px)
 {
@@ -875,12 +977,6 @@ header
     {
         font-size: 20px;
         font-weight: bold;
-        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white; /*Fallback for old browsers*/
-        align-self: flex-start;
         margin-left: 10px;
         
     }
@@ -899,15 +995,7 @@ header
 
     #welcome-section .name
     {
-        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-        font-family: 'Roboto', sans-serif;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 35px;
-        font-weight: bold;
-        align-self: flex-start;
-        margin-left: 10px;
+        font-size: 30px;
     }
 
     #welcome-section > .opportunities
@@ -933,21 +1021,12 @@ header
         font-family: 'Roboto', sans-serif;    
         font-size: 20px;
         font-weight: bold;
-        background: -webkit-linear-gradient(rgb(174, 255, 0), rgb(128, 255, 0));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
+
     }
 
     .about_me::after
     {
         
-        content:"About Me";
-        background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-size: 30px;
         font-family: 'Roboto', sans-serif;
         
@@ -989,7 +1068,7 @@ header
         word-wrap: break-word;
         line-height: 1.5em;
         margin-left: 0;
-        border: 1px solid red;
+  
     }
 
     .Projects-title
@@ -1009,7 +1088,7 @@ header
     {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        grid-gap: 50px;
+        grid-gap: 40px;
         width: 80%;
         max-width: 1240px;
         margin: 20px auto;
