@@ -622,6 +622,39 @@ header
     text-decoration: none;
 }
 
+@media (max-width:812px)
+{
+    .container1
+    {
+        width: 100%;
+        margin-top:100px;
+        height:auto;
+    
+    }
+    #welcome-section > h1
+    {
+        font-size: 24px;
+        margin-left: 10px;
+        
+    }
+    
+    #welcome-section > p
+    {
+        font-family: 'Poppins', Times, serif;
+        font-size: 18px;
+        margin-left: 10px;
+        
+    }
+
+    #welcome-section .name
+    {
+        font-size: 55px;
+        margin-left: 10px;
+        
+
+    }
+}
+
 @media (min-height:1366px)
 {
    
