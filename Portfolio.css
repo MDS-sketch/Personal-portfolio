@@ -490,7 +490,7 @@ header
 }
 
 
-#icons .php
+#icons .php,.mysql
 {
     width: 7.2%;
     height: auto;
@@ -499,14 +499,16 @@ header
 
 }
 
-#icons .mysql
+#icons .AI ,.Figma
 {
-    width: 10%;
+    width:10%;
     height: auto;
     margin: 10px 20px;
     align-self: center;
 
 }
+
+
 
 
 /*Contact section*/
