@@ -615,6 +615,13 @@ header
     text-align: left !important;
 
 }
+#footer .hosting
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
 
 #footer .copyright
 {
