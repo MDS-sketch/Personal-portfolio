@@ -660,8 +660,11 @@ header
     {
         font-size: 55px;
         margin-left: 10px;
-        
-
+    }
+    .coffee
+    {
+       
+        text-align: center;
     }
 }
 
@@ -804,6 +807,7 @@ header
        
         font-weight: bold;
         font-size: 12px;
+        text-align: center;
     }
 
     .contact
@@ -1009,6 +1013,7 @@ header
        
         font-weight: bold;
         font-size: 12px;
+        text-align: center;
     }
 
     .contact
